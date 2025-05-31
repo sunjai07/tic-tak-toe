@@ -1,0 +1,79 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #74ebd5, #acb6e5);
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+.container {
+  max-width: 500px;
+  margin: auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+h1 {
+  color: #444;
+}
+
+.player-inputs input {
+  margin: 10px;
+  padding: 10px;
+  font-size: 16px;
+  width: 80%;
+  border-radius: 8px;
+  border: 1px solid #888;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background: #2196f3;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #0b7dda;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 10px;
+  justify-content: center; /* Center the grid */
+  margin: 20px auto;
+}
+
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease;
+}
+
+.cell:hover {
+  background-color: #e0f7fa;
+}
+
+#status {
+  font-size: 20px;
+  margin: 15px 0;
+  font-weight: bold;
+  color: #222;
+}
