@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Rock Paper Scissors - Animated</title>
+  <link rel="stylesheet" href="paper.css" />
+</head>
+<body>
+  <div class="container">
+
+    <!-- Name input screen -->
+    <div id="nameScreen" class="centered-screen">
+      <h1>Welcome to Rock Paper Scissors!</h1>
+      <p>Enter your name to start:</p>
+      <input type="text" id="playerNameInput" placeholder="Your name" />
+      <button id="startBtn">Start Game</button>
+    </div>
+
+    <!-- Game screen -->
+    <div id="gameScreen" class="hidden">
+      <h2 id="welcomeMsg"></h2>
+      <p>Choose your move:</p>
+
+      <div class="buttons">
+        <button class="choice-btn" data-choice="rock">🪨 Rock</button>
+        <button class="choice-btn" data-choice="paper">📄 Paper</button>
+        <button class="choice-btn" data-choice="scissors">✂️ Scissors</button>
+      </div>
+
+      <div class="result">
+        <div class="hand user-hand">
+          <p>You chose:</p>
+          <div id="userChoice" class="hand-icon">❔</div>
+        </div>
+        <div class="hand computer-hand">
+          <p>Computer chose:</p>
+          <div id="computerChoice" class="hand-icon">❔</div>
+        </div>
+      </div>
+
+      <h2 id="outcome" class="fade-in"></h2>
+      <button id="playAgainBtn" class="hidden">Play Again</button>
+    </div>
+  </div>
+
+  <script src="scissor.js"></script>
+</body>
+</html>
